@@ -1,15 +1,23 @@
 import os
 from datetime import datetime, timedelta
 import platform
+
 from airflow import DAG
 from airflow.operators.bash import BashOperator
+from airflow.operators.python import PythonOperator
+from pendulum import timezone
+
+local_tz = timezone("Europe/Paris")
 
 default_args = {
     "owner": "Allister Kohn",
-    "start_date": datetime(2025, 6, 1),
+    "start_date": datetime(2025, 6, 1, tzinfo=local_tz),
     "depends_on_past": False,
     "retries": 1,
 }
+
+PYENV_PYTHON = "/home/allisterkohn/.pyenv/versions/velib_env/bin/python"
+PROJECT_ROOT = os.path.dirname(__file__) + "/.."
 
 if platform.system() == "Darwin":
     DVC_BIN = "/Users/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc"
@@ -18,26 +26,30 @@ elif platform.system() == "Linux":
 else:
     raise ValueError(f"Unsupported system: {platform.system()}")
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-
-yesterday = (datetime.today() - timedelta(days=1)).strftime("%Y/%m/%d")
-target_dir = f"data/station_status/raw/{yesterday}"
 
 with DAG(
-    dag_id="push_all_raw_files_to_s3",
+    dag_id="concatenate_yesterday_statuses_and_push_to_s3",
+    description="Pipeline to concatenate yesterday's statuses and push to S3",
     default_args=default_args,
-    description="Pipeline to dvc add and push yesterday's raw files",
     schedule="0 0 * * *",
     catchup=False,
+    tags=[],
 ) as dag:
+
+    compile_yesterday_raw_files = BashOperator(
+        task_id="compile_yesterday_raw_files",
+        bash_command=f"{PYENV_PYTHON} src/compile_yesterday_raw_files.py",
+        cwd=str(PROJECT_ROOT),
+    )
 
     dvc_add_and_push = BashOperator(
         task_id="dvc_add_and_push",
         bash_command=f"""
-            {DVC_BIN} add "{target_dir}"
+            {DVC_BIN} add data/
             {DVC_BIN} push
+            {DVC_BIN} gc -c -w -f
         """,
         cwd=PROJECT_ROOT,
     )
-
-    dvc_add_and_push
+    
+    compile_yesterday_raw_files >> dvc_add_and_push

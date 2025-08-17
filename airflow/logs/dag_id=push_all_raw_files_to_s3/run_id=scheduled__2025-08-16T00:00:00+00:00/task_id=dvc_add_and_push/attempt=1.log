@@ -142,3 +142,30 @@ airflow.exceptions.AirflowException: Bash command failed. The command returned a
 [2025-08-17T14:27:31.672+0200] {local_task_job_runner.py:243} INFO - Task exited with return code 0
 [2025-08-17T14:27:31.681+0200] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2025-08-17T14:27:31.682+0200] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-08-17T17:23:17.463+0200] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T17:23:17.486+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push scheduled__2025-08-16T00:00:00+00:00 [queued]>
+[2025-08-17T17:23:17.491+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push scheduled__2025-08-16T00:00:00+00:00 [queued]>
+[2025-08-17T17:23:17.491+0200] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-17T17:23:17.518+0200] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dvc_add_and_push> on 2025-08-16 00:00:00+00:00
+[2025-08-17T17:23:17.520+0200] {standard_task_runner.py:64} INFO - Started process 221500 to run task
+[2025-08-17T17:23:17.524+0200] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'push_all_raw_files_to_s3', 'dvc_add_and_push', 'scheduled__2025-08-16T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/push_all_raw_files_to_s3.py', '--cfg-path', '/tmp/tmp29jxk7jm']
+[2025-08-17T17:23:17.526+0200] {standard_task_runner.py:91} INFO - Job 53: Subtask dvc_add_and_push
+[2025-08-17T17:23:17.563+0200] {task_command.py:426} INFO - Running <TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push scheduled__2025-08-16T00:00:00+00:00 [running]> on host raspberrypi
+[2025-08-17T17:23:17.631+0200] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Allister Kohn' AIRFLOW_CTX_DAG_ID='push_all_raw_files_to_s3' AIRFLOW_CTX_TASK_ID='dvc_add_and_push' AIRFLOW_CTX_EXECUTION_DATE='2025-08-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-08-16T00:00:00+00:00'
+[2025-08-17T17:23:17.631+0200] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T17:23:17.645+0200] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-17T17:23:17.645+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            /home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc add "data/station_status/raw"\n            /home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc push\n            /home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc gc -c -w -f\n        ']
+[2025-08-17T17:23:17.650+0200] {subprocess.py:86} INFO - Output:
+[2025-08-17T17:23:20.412+0200] {subprocess.py:93} INFO - 13 files pushed
+[2025-08-17T17:23:21.151+0200] {subprocess.py:93} INFO - WARNING: This will remove all cache except items used in the workspace of the current repo.
+[2025-08-17T17:23:21.195+0200] {subprocess.py:93} INFO - Removed 3 objects from repo cache.
+[2025-08-17T17:23:21.196+0200] {subprocess.py:93} INFO - No unused 'local' cache to remove.
+[2025-08-17T17:23:21.197+0200] {subprocess.py:93} INFO - No unused 'legacy' cache to remove.
+[2025-08-17T17:23:22.184+0200] {subprocess.py:93} INFO - Removed 3 objects from remote.
+[2025-08-17T17:23:22.732+0200] {subprocess.py:93} INFO - No unused cache to remove from remote.
+[2025-08-17T17:23:23.110+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-17T17:23:23.110+0200] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T17:23:23.151+0200] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=push_all_raw_files_to_s3, task_id=dvc_add_and_push, run_id=scheduled__2025-08-16T00:00:00+00:00, execution_date=20250816T000000, start_date=20250817T152317, end_date=20250817T152323
+[2025-08-17T17:23:23.197+0200] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T17:23:23.206+0200] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T17:23:23.207+0200] {local_task_job_runner.py:222} INFO - ::endgroup::

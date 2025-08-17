@@ -3,4 +3,6 @@
 .ipynb_checkpoints/
 .venv/
 __pycache__/
-raw/
+data/
+airflow/logs/
+.dvc/cache/
