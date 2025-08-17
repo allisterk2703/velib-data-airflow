@@ -1,0 +1,56 @@
+[2025-08-17T14:15:03.638+0200] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T14:15:03.660+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [queued]>
+[2025-08-17T14:15:03.666+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [queued]>
+[2025-08-17T14:15:03.667+0200] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-17T14:15:03.694+0200] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): fetch_station_status> on 2025-08-17 12:00:00+00:00
+[2025-08-17T14:15:03.697+0200] {standard_task_runner.py:64} INFO - Started process 38722 to run task
+[2025-08-17T14:15:03.701+0200] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'velib_data_pipeline', 'fetch_station_status', 'scheduled__2025-08-17T12:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/velib_data_pipeline.py', '--cfg-path', '/tmp/tmpmbne6jgm']
+[2025-08-17T14:15:03.703+0200] {standard_task_runner.py:91} INFO - Job 6: Subtask fetch_station_status
+[2025-08-17T14:15:03.744+0200] {task_command.py:426} INFO - Running <TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [running]> on host raspberrypi
+[2025-08-17T14:15:03.827+0200] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Allister Kohn' AIRFLOW_CTX_DAG_ID='velib_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_station_status' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-08-17T12:00:00+00:00'
+[2025-08-17T14:15:03.827+0200] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T14:15:03.841+0200] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-17T14:15:03.842+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/allisterkohn/.pyenv/versions/velib_env/bin/python src/fetch_velib_data.py']
+[2025-08-17T14:15:03.847+0200] {subprocess.py:86} INFO - Output:
+[2025-08-17T14:15:04.332+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,329 - INFO - STARTED FETCHING STATION STATUS...
+[2025-08-17T14:15:04.332+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,330 - INFO - Folder path status = /home/allisterkohn/Desktop/velib-data-airflow/data/station_status
+[2025-08-17T14:15:04.332+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,330 - INFO - Folder path info = /home/allisterkohn/Desktop/velib-data-airflow/data/station_info
+[2025-08-17T14:15:04.332+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,330 - INFO - Fetching station information
+[2025-08-17T14:15:04.522+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,522 - INFO - Station info saved in /home/allisterkohn/Desktop/velib-data-airflow/data/station_info/station_info/velib_station_info.csv
+[2025-08-17T14:15:04.524+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,524 - INFO - Fetching station status
+[2025-08-17T14:15:04.867+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,867 - INFO - Data saved in /home/allisterkohn/Desktop/velib-data-airflow/data/station_status/raw/2025/08/17/velib_data_2025-08-17_14-15-00.csv
+[2025-08-17T14:15:04.870+0200] {subprocess.py:93} INFO - 2025-08-17 14:15:04,869 - INFO - FETCHING STATION STATUS COMPLETED
+[2025-08-17T14:15:05.033+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-17T14:15:05.033+0200] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T14:15:05.052+0200] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=velib_data_pipeline, task_id=fetch_station_status, run_id=scheduled__2025-08-17T12:00:00+00:00, execution_date=20250817T120000, start_date=20250817T121503, end_date=20250817T121505
+[2025-08-17T14:15:05.082+0200] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T14:15:05.097+0200] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T14:15:05.110+0200] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-08-17T14:27:38.069+0200] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T14:27:38.093+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [queued]>
+[2025-08-17T14:27:38.099+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [queued]>
+[2025-08-17T14:27:38.099+0200] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-17T14:27:38.124+0200] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): fetch_station_status> on 2025-08-17 12:00:00+00:00
+[2025-08-17T14:27:38.126+0200] {standard_task_runner.py:64} INFO - Started process 50559 to run task
+[2025-08-17T14:27:38.130+0200] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'velib_data_pipeline', 'fetch_station_status', 'scheduled__2025-08-17T12:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/velib_data_pipeline.py', '--cfg-path', '/tmp/tmpzsdd9wlm']
+[2025-08-17T14:27:38.132+0200] {standard_task_runner.py:91} INFO - Job 13: Subtask fetch_station_status
+[2025-08-17T14:27:38.168+0200] {task_command.py:426} INFO - Running <TaskInstance: velib_data_pipeline.fetch_station_status scheduled__2025-08-17T12:00:00+00:00 [running]> on host raspberrypi
+[2025-08-17T14:27:38.232+0200] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Allister Kohn' AIRFLOW_CTX_DAG_ID='velib_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_station_status' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-08-17T12:00:00+00:00'
+[2025-08-17T14:27:38.232+0200] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T14:27:38.245+0200] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-17T14:27:38.245+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '/home/allisterkohn/.pyenv/versions/velib_env/bin/python src/fetch_velib_data.py']
+[2025-08-17T14:27:38.251+0200] {subprocess.py:86} INFO - Output:
+[2025-08-17T14:27:38.728+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,728 - INFO - STARTED FETCHING STATION STATUS...
+[2025-08-17T14:27:38.728+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,728 - INFO - Folder path status = /home/allisterkohn/Desktop/velib-data-airflow/data/station_status
+[2025-08-17T14:27:38.728+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,728 - INFO - Folder path info = /home/allisterkohn/Desktop/velib-data-airflow/data/station_info
+[2025-08-17T14:27:38.728+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,728 - INFO - Fetching station information
+[2025-08-17T14:27:38.925+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,925 - INFO - Station info saved in /home/allisterkohn/Desktop/velib-data-airflow/data/station_info/station_info/velib_station_info.csv
+[2025-08-17T14:27:38.927+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:38,926 - INFO - Fetching station status
+[2025-08-17T14:27:39.234+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:39,234 - INFO - Data saved in /home/allisterkohn/Desktop/velib-data-airflow/data/station_status/raw/2025/08/17/velib_data_2025-08-17_14-27-00.csv
+[2025-08-17T14:27:39.237+0200] {subprocess.py:93} INFO - 2025-08-17 14:27:39,236 - INFO - FETCHING STATION STATUS COMPLETED
+[2025-08-17T14:27:39.382+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-17T14:27:39.382+0200] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T14:27:39.399+0200] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=velib_data_pipeline, task_id=fetch_station_status, run_id=scheduled__2025-08-17T12:00:00+00:00, execution_date=20250817T120000, start_date=20250817T122738, end_date=20250817T122739
+[2025-08-17T14:27:39.432+0200] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T14:27:39.444+0200] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T14:27:39.454+0200] {local_task_job_runner.py:222} INFO - ::endgroup::

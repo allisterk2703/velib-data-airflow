@@ -1,0 +1,471 @@
+[2025-08-17T14:08:16.245+0200] {manager.py:470} INFO - Processing files using up to 1 processes at a time 
+[2025-08-17T14:08:16.246+0200] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-08-17T14:08:16.246+0200] {manager.py:472} INFO - Checking for new files in /home/allisterkohn/Desktop/velib-data-airflow/dags every 300 seconds
+[2025-08-17T14:08:16.246+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:08:16.247+0200] {manager.py:740} INFO - There are 1 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:08:16.628+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.30s           2025-08-17T12:08:16
+================================================================================
+[2025-08-17T14:08:46.914+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:08:46
+================================================================================
+[2025-08-17T14:09:17.397+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:09:17
+================================================================================
+[2025-08-17T14:09:48.245+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:09:48
+================================================================================
+[2025-08-17T14:10:18.453+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:10:18
+================================================================================
+[2025-08-17T14:10:48.625+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:10:48
+================================================================================
+[2025-08-17T14:11:18.891+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:11:18
+================================================================================
+[2025-08-17T14:11:49.070+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:11:49
+================================================================================
+[2025-08-17T14:12:19.336+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:12:19
+================================================================================
+[2025-08-17T14:12:49.504+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.11s           2025-08-17T12:12:49
+================================================================================
+[2025-08-17T14:13:16.252+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:13:16.253+0200] {manager.py:740} INFO - There are 1 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:13:21.927+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:13:21
+================================================================================
+[2025-08-17T14:13:52.720+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:13:52
+================================================================================
+[2025-08-17T14:14:23.614+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.30s           2025-08-17T12:14:23
+================================================================================
+[2025-08-17T14:14:56.686+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.70s           2025-08-17T12:14:56
+================================================================================
+[2025-08-17T14:15:27.170+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.30s           2025-08-17T12:15:27
+================================================================================
+[2025-08-17T14:15:58.265+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.30s           2025-08-17T12:15:58
+================================================================================
+[2025-08-17T14:16:29.374+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.31s           2025-08-17T12:16:29
+================================================================================
+[2025-08-17T14:16:59.873+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.30s           2025-08-17T12:16:59
+================================================================================
+[2025-08-17T14:17:30.357+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.21s           2025-08-17T12:17:30
+================================================================================
+[2025-08-17T14:18:00.678+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:18:00
+================================================================================
+[2025-08-17T14:18:16.302+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:18:16.303+0200] {manager.py:740} INFO - There are 1 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:18:30.893+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:18:30
+================================================================================
+[2025-08-17T14:19:01.089+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:19:01
+================================================================================
+[2025-08-17T14:19:31.295+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:19:31
+================================================================================
+[2025-08-17T14:20:01.608+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:20:01
+================================================================================
+[2025-08-17T14:20:31.805+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:20:31
+================================================================================
+[2025-08-17T14:21:02.105+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:21:02
+================================================================================
+[2025-08-17T14:21:32.298+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:21:32
+================================================================================
+[2025-08-17T14:22:02.501+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:22:02
+================================================================================
+[2025-08-17T14:22:32.764+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.20s           2025-08-17T12:22:32
+================================================================================
+[2025-08-17T14:23:02.930+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                           1           0  0.10s           2025-08-17T12:23:02
+================================================================================
+[2025-08-17T14:23:16.343+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:23:16.344+0200] {manager.py:740} INFO - There are 2 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:23:33.208+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:23:33
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:23:23
+================================================================================
+[2025-08-17T14:24:03.416+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.20s           2025-08-17T12:23:52
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.20s           2025-08-17T12:24:03
+================================================================================
+[2025-08-17T14:24:33.585+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:24:04
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:24:33
+================================================================================
+[2025-08-17T14:25:03.783+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.20s           2025-08-17T12:24:45
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:25:03
+================================================================================
+[2025-08-17T14:25:34.459+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.11s           2025-08-17T12:25:15
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:25:34
+================================================================================
+[2025-08-17T14:26:04.845+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:26:04
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:25:46
+================================================================================
+[2025-08-17T14:26:35.175+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:26:16
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:26:35
+================================================================================
+[2025-08-17T14:27:05.544+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.20s           2025-08-17T12:26:54
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:27:05
+================================================================================
+[2025-08-17T14:27:36.484+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:27:36
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:27:27
+================================================================================
+[2025-08-17T14:28:07.335+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:27:48
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:28:07
+================================================================================
+[2025-08-17T14:28:16.691+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:28:16.692+0200] {manager.py:740} INFO - There are 2 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:28:37.601+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.11s           2025-08-17T12:28:19
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:28:37
+================================================================================
+[2025-08-17T14:29:07.997+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.20s           2025-08-17T12:29:07
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:28:50
+================================================================================
+[2025-08-17T14:29:38.214+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:29:20
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:29:38
+================================================================================
+[2025-08-17T14:30:09.385+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.21s           2025-08-17T12:30:09
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:29:50
+================================================================================
+[2025-08-17T14:30:39.671+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:30:39
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:30:20
+================================================================================
+[2025-08-17T14:31:10.074+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.21s           2025-08-17T12:31:10
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:30:51
+================================================================================
+[2025-08-17T14:31:40.806+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.20s           2025-08-17T12:31:40
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:31:21
+================================================================================
+[2025-08-17T14:32:11.681+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  1.41s           2025-08-17T12:31:52
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:32:11
+================================================================================
+[2025-08-17T14:32:42.065+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.20s           2025-08-17T12:32:42
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.20s           2025-08-17T12:32:23
+================================================================================
+[2025-08-17T14:33:12.274+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:32:53
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:33:12
+================================================================================
+[2025-08-17T14:33:16.732+0200] {manager.py:737} INFO - Searching for files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:33:16.733+0200] {manager.py:740} INFO - There are 2 files in /home/allisterkohn/Desktop/velib-data-airflow/dags
+[2025-08-17T14:33:42.549+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:33:42
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:33:23
+================================================================================
+[2025-08-17T14:34:12.827+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:33:53
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:34:12
+================================================================================
+[2025-08-17T14:34:43.103+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:34:23
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.10s           2025-08-17T12:34:43
+================================================================================
+[2025-08-17T14:35:13.470+0200] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/allisterkohn/Desktop/velib-data-airflow/dags/velib_data_pipeline.py                                1           0  0.20s           2025-08-17T12:35:13
+/home/allisterkohn/Desktop/velib-data-airflow/dags/push_all_raw_files_to_s3.py                           1           0  0.10s           2025-08-17T12:34:54
+================================================================================

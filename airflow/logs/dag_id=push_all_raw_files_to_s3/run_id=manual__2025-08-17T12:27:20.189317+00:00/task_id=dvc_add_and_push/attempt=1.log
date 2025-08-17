@@ -1,0 +1,21 @@
+[2025-08-17T14:27:23.145+0200] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-17T14:27:23.169+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push manual__2025-08-17T12:27:20.189317+00:00 [queued]>
+[2025-08-17T14:27:23.174+0200] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push manual__2025-08-17T12:27:20.189317+00:00 [queued]>
+[2025-08-17T14:27:23.174+0200] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-08-17T14:27:23.222+0200] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dvc_add_and_push> on 2025-08-17 12:27:20.189317+00:00
+[2025-08-17T14:27:23.224+0200] {standard_task_runner.py:64} INFO - Started process 50284 to run task
+[2025-08-17T14:27:23.228+0200] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'push_all_raw_files_to_s3', 'dvc_add_and_push', 'manual__2025-08-17T12:27:20.189317+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/push_all_raw_files_to_s3.py', '--cfg-path', '/tmp/tmp8e9kbro0']
+[2025-08-17T14:27:23.230+0200] {standard_task_runner.py:91} INFO - Job 11: Subtask dvc_add_and_push
+[2025-08-17T14:27:23.265+0200] {task_command.py:426} INFO - Running <TaskInstance: push_all_raw_files_to_s3.dvc_add_and_push manual__2025-08-17T12:27:20.189317+00:00 [running]> on host raspberrypi
+[2025-08-17T14:27:23.353+0200] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Allister Kohn' AIRFLOW_CTX_DAG_ID='push_all_raw_files_to_s3' AIRFLOW_CTX_TASK_ID='dvc_add_and_push' AIRFLOW_CTX_EXECUTION_DATE='2025-08-17T12:27:20.189317+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-17T12:27:20.189317+00:00'
+[2025-08-17T14:27:23.354+0200] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-17T14:27:23.365+0200] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-08-17T14:27:23.365+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n            /home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc add "data/station_status/raw/2025/08/16"\n            /home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc push\n        ']
+[2025-08-17T14:27:23.370+0200] {subprocess.py:86} INFO - Output:
+[2025-08-17T14:27:26.172+0200] {subprocess.py:93} INFO - 6 files pushed
+[2025-08-17T14:27:26.514+0200] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-08-17T14:27:26.515+0200] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-17T14:27:26.556+0200] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=push_all_raw_files_to_s3, task_id=dvc_add_and_push, run_id=manual__2025-08-17T12:27:20.189317+00:00, execution_date=20250817T122720, start_date=20250817T122723, end_date=20250817T122726
+[2025-08-17T14:27:26.622+0200] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-08-17T14:27:26.640+0200] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-17T14:27:26.641+0200] {local_task_job_runner.py:222} INFO - ::endgroup::

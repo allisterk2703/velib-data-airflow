@@ -1,0 +1,5 @@
+[core]
+    no_scm = True
+    remote = velib-data-airflow-bucket
+['remote "velib-data-airflow-bucket"']
+    url = s3://velib-data-airflow-bucket
