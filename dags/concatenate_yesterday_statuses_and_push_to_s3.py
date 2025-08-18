@@ -42,14 +42,16 @@ with DAG(
         cwd=str(PROJECT_ROOT),
     )
 
-    dvc_add_and_push = BashOperator(
-        task_id="dvc_add_and_push",
-        bash_command=f"""
-            {DVC_BIN} add data/station_status/raw/ data/station_status/clean/ data/station_info/
-            {DVC_BIN} push
-            {DVC_BIN} gc -c -w -f
-        """,
+    build_full_data = BashOperator(
+        task_id="build_full_data",
+        bash_command=f"{PYENV_PYTHON} src/compile_clean_to_full.py",
+        cwd=str(PROJECT_ROOT),
+    )
+
+    sync_to_s3 = BashOperator(
+        task_id="sync_to_s3",
+        bash_command=f"{PROJECT_ROOT}/src/sync_to_s3.sh",
         cwd=PROJECT_ROOT,
     )
-    
-    compile_yesterday_raw_files >> dvc_add_and_push
+
+    compile_yesterday_raw_files >> build_full_data >> sync_to_s3

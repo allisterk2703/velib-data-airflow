@@ -1,6 +1,7 @@
 ipykernel
 pandas
 polars
+geopandas
 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.9.3/constraints-3.11.txt
 apache-airflow==2.9.3
 dvc[s3]
