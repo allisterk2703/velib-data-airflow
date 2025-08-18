@@ -1,8 +1,37 @@
-.DS_Store
-.env
-.ipynb_checkpoints/
-.venv/
-__pycache__/
-data/
+# === Airflow ===
+airflow/airflow.db
+airflow/airflow-webserver.pid
 airflow/logs/
-.dvc/cache/
+airflow/*.log
+
+# === Python cache ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.egg
+
+# === Virtual environments ===
+.venv/
+env/
+venv/
+velib-data-env/
+
+# === OS / IDE ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Notebooks checkpoints ===
+.ipynb_checkpoints/
+
+# === Data
+data/
+
+# === Secrets ===
+.env
+*.key
+*.pem

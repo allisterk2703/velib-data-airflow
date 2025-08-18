@@ -17,7 +17,9 @@ default_args = {
 }
 
 PYENV_PYTHON = "/home/allisterkohn/.pyenv/versions/velib_env/bin/python"
-PROJECT_ROOT = os.path.dirname(__file__) + "/.."
+# Use absolute path resolution instead of string concatenation
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+print(f"Project root: {PROJECT_ROOT}")
 
 if platform.system() == "Darwin":
     DVC_BIN = "/Users/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc"
@@ -25,7 +27,6 @@ elif platform.system() == "Linux":
     DVC_BIN = "/home/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc"
 else:
     raise ValueError(f"Unsupported system: {platform.system()}")
-
 
 with DAG(
     dag_id="concatenate_yesterday_statuses_and_push_to_s3",
@@ -39,18 +40,18 @@ with DAG(
     compile_yesterday_raw_files = BashOperator(
         task_id="compile_yesterday_raw_files",
         bash_command=f"{PYENV_PYTHON} src/compile_yesterday_raw_files.py",
-        cwd=str(PROJECT_ROOT),
+        cwd=PROJECT_ROOT,
     )
 
     build_full_data = BashOperator(
         task_id="build_full_data",
         bash_command=f"{PYENV_PYTHON} src/compile_clean_to_full.py",
-        cwd=str(PROJECT_ROOT),
+        cwd=PROJECT_ROOT,
     )
 
     sync_to_s3 = BashOperator(
         task_id="sync_to_s3",
-        bash_command=f"{PROJECT_ROOT}/src/sync_to_s3.sh",
+        bash_command=f"bash -c '{PROJECT_ROOT}/src/sync_to_s3.sh'",
         cwd=PROJECT_ROOT,
     )
 
