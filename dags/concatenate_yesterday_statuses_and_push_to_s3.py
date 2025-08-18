@@ -45,7 +45,7 @@ with DAG(
     dvc_add_and_push = BashOperator(
         task_id="dvc_add_and_push",
         bash_command=f"""
-            {DVC_BIN} add data/
+            {DVC_BIN} add data/station_status/raw/ data/station_status/clean/ data/station_info/
             {DVC_BIN} push
             {DVC_BIN} gc -c -w -f
         """,
