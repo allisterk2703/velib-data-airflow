@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import datetime, timedelta
 import platform
 
@@ -6,6 +7,12 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from pendulum import timezone
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+from src.telegram_notifier import send_telegram_message
 
 local_tz = timezone("Europe/Paris")
 
@@ -17,9 +24,7 @@ default_args = {
 }
 
 PYENV_PYTHON = "/home/allisterkohn/.pyenv/versions/velib_env/bin/python"
-# Use absolute path resolution instead of string concatenation
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-print(f"Project root: {PROJECT_ROOT}")
 
 if platform.system() == "Darwin":
     DVC_BIN = "/Users/allisterkohn/.pyenv/versions/velib-data-env/bin/dvc"
@@ -55,4 +60,11 @@ with DAG(
         cwd=PROJECT_ROOT,
     )
 
-    compile_yesterday_raw_files >> build_full_data >> sync_to_s3
+    notify_telegram = PythonOperator(
+        task_id="notify_telegram",
+        python_callable=lambda: send_telegram_message(
+            "DAG `concatenate_yesterday_statuses_and_push_to_s3` executed successfully"
+        ),
+    )
+
+    compile_yesterday_raw_files >> build_full_data >> sync_to_s3 >> notify_telegram
