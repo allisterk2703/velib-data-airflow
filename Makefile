@@ -15,8 +15,9 @@ install-requirements-dev:  ## Install development dependencies
 	@pip install -r requirements-dev.txt
 	@echo "Development dependencies installed"
 
-clean:  ## Remove temporary files (excluding .venv)
-	@rm -rf __pycache__ .pytest_cache *.pyc
+clean:  ## Remove temporary files
+	@find . -type d -name "__pycache__" -exec rm -rf {} +
+	@rm -rf .pytest_cache *.pyc
 	@echo "Temporary files removed"
 
 isort:  ## Sort Python imports

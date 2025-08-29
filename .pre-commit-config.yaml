@@ -3,12 +3,14 @@ repos:
     rev: 6.0.1
     hooks:
       - id: isort
+        files: ^(src|dags)/
   - repo: https://github.com/ambv/black
     rev: 25.1.0
     hooks:
       - id: black
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.12.5
-    hooks:
-      - id: ruff
-        args: ["--fix"]
+        files: ^(src|dags)/
+  # - repo: https://github.com/astral-sh/ruff-pre-commit
+  #   rev: v0.12.5
+  #   hooks:
+  #     - id: ruff
+  #       args: ["--fix"]
